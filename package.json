@@ -1,0 +1,25 @@
+{
+  "name": "samil-solar-web",
+  "version": "0.1.0",
+  "description": "Provides a real-time web interface for viewing stats from the samil solar power inverter.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmdm/samil-solar-web.git"
+  },
+  "scripts": {
+     "start": "forever start main.js",
+     "stop": "forever stop main.js"
+  },
+  "author": "Kenny Millington <kenny@kennynet.co.uk>",
+  "license": "GPLv3",
+  "engine": "node >= 0.10.0",
+  "dependencies": {
+     "consolidate": "0.8.x",
+     "express": "3.1.x",
+     "forever": "0.10.x",
+     "socket.io": "0.9.x",
+     "swig": "0.13.x",
+     "winston": "0.6.x"
+  }
+}
